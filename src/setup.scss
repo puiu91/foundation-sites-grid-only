@@ -1,13 +1,17 @@
 /**
  *
- * Here we are copying and rolling our own Foundation scss source file from `~foundation-sites/scss/foundation.scss`.
- * After copying this source file, we updated the paths to target the `node_modules` directory by prefixing scss
- * file imports using `~`.
+ * Here we are copying and rolling our own Foundation scss source file using
+ * `~foundation-sites/scss/foundation.scss` as the template.
+ *
+ * After copying this source file, we updated the paths to target the
+ * `node_modules` directory by prefixing scss file imports using `~`.
  *
  * This gives more control over individual components and avoids polluting the
- * scss namespace with unused variables reducing the chance for collisions with other frameworks.
+ * scss namespace with unused variables reducing the chance for collisions with
+ * other frameworks.
  *
- * For the purposes of this project, we are only interested in the Foundation grid and nothing else.
+ * For the purposes of this project, we are only interested in the Foundation
+ * grid and nothing else.
  *
  */
 
@@ -37,9 +41,11 @@
 // Global variables and styles
 @import "../node_modules/foundation-sites/scss/global";
 
-// Components
+// Grids
 @import "../node_modules/foundation-sites/scss/grid/grid";
 @import "../node_modules/foundation-sites/scss/xy-grid/xy-grid";
+
+// Components
 @import '../node_modules/foundation-sites/scss/components/flex';
 
 // Includes
